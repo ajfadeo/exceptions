@@ -40,9 +40,10 @@ public class Program {
 			else if(!checkOut.after(checkIn)) {
 				System.out.println("Erro in reservation: checkOut must be after checkIn");
 			}
-
-			reservation.updateDates(checkIn, checkOut);
-			System.out.println("Reservation = " + reservation);
+			else {
+				reservation.updateDates(checkIn, checkOut);
+				System.out.println("Reservation = " + reservation);
+			}
 	
 		}
 		
